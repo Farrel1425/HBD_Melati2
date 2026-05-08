@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Melati 🌷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-inner">
+      <div class="loader-flower">🌷</div>
+      <p class="loader-text">preparing something special...</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Floating Particles -->
+  <div id="particles-container"></div>
+
+  <!-- Music Player -->
+  <div id="music-player">
+    <button id="music-btn" title="Play / Pause music">
+      <span id="music-icon">♪</span>
+    </button>
+    <span class="music-label">our song</span>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-blur"></div>
+    <div class="hero-content">
+      <p class="hero-pre fade-in-up" style="animation-delay:.3s">untuk seseorang yang istimewa</p>
+      <h1 class="hero-title fade-in-up" style="animation-delay:.6s">
+        Happy Birthday,<br><span class="script-name">Melati</span> 🌷
+      </h1>
+      <p class="hero-subtitle fade-in-up" style="animation-delay:.9s">
+        hari ini langit sedikit lebih cantik<br>karena kamu ada di dunia ini.
+      </p>
+      <button id="open-msg-btn" class="btn-primary fade-in-up" style="animation-delay:1.2s">
+        Open My Message
+      </button>
+    </div>
+    <div class="hero-scroll-hint fade-in-up" style="animation-delay:1.8s">
+      <span>scroll down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- SLIDER -->
+  <section id="slider-section" class="hidden-section">
+    <div class="section-header">
+      <p class="section-label">our moments</p>
+      <h2 class="section-title">Memories We Made 🤍</h2>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>📷</span><p>photo1.jpg</p></div>
+          </div>
+          <div class="slide-caption">satu momen yang aku simpan baik-baik 🌸</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>🎬</span><p>video1.mp4</p></div>
+          </div>
+          <div class="slide-caption">kamu yang paling berharga di frame ini 🎞️</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>📷</span><p>photo2.jpg</p></div>
+          </div>
+          <div class="slide-caption">waktu ini aku nggak mau lupa ✨</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>📷</span><p>photo3.jpg</p></div>
+          </div>
+          <div class="slide-caption">my favorite person 🌷</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>🎬</span><p>video2.mp4</p></div>
+          </div>
+          <div class="slide-caption">ini salah satu favoritku 🤍</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>🎬</span><p>photo4.jpg</p></div>
+          </div>
+          <div class="slide-caption">Dia cantik sekali bukan? 🤍</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-media placeholder">
+            <div class="placeholder-inner"><span>🎬</span><p>video3.mp4</p></div>
+          </div>
+          <div class="slide-caption">Dia cantik sekali bukan? 🤍</div>
+        </div>
+
+      </div>
+      <button class="slider-btn prev" id="prevBtn">&#8592;</button>
+      <button class="slider-btn next" id="nextBtn">&#8594;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- MESSAGE CARDS -->
+  <section id="messages-section">
+    <div class="section-header">
+      <p class="section-label">for you</p>
+      <h2 class="section-title">Kata-Kata dari Hatiku 💌</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="msg-card reveal" data-delay="0"><span class="card-emoji">🌷</span><p>selamat ulang tahun cantik</p></div>
+      <div class="msg-card reveal" data-delay="100"><span class="card-emoji">🤍</span><p>makasih ya udah hadir di hidup aku</p></div>
+      <div class="msg-card reveal" data-delay="200"><span class="card-emoji">🌸</span><p>semoga semua hal baik datang ke kamu</p></div>
+      <div class="msg-card reveal" data-delay="300"><span class="card-emoji">😌</span><p>jangan sering bikin aku kangen, hehe</p></div>
+      <div class="msg-card reveal" data-delay="400"><span class="card-emoji">✨</span><p>hari ini dunia lagi beruntung karena kamu lahir</p></div>
+      <div class="msg-card reveal" data-delay="0"><span class="card-emoji">💛</span><p>aku harap senyum kamu selalu ada</p></div>
+      <div class="msg-card reveal" data-delay="100"><span class="card-emoji">🌼</span><p>tetap jadi Melati yang aku kenal ya</p></div>
+      <div class="msg-card reveal" data-delay="200"><span class="card-emoji">🕊️</span><p>semoga langkah kamu selalu dipenuhi hal baik</p></div>
+      <div class="msg-card reveal" data-delay="300"><span class="card-emoji">💐</span><p>you deserve every beautiful thing in this world</p></div>
+      <div class="msg-card reveal" data-delay="400"><span class="card-emoji">🌙</span><p>semoga mimpi kamu terus tumbuh dan mekar</p></div>
+      <div class="msg-card reveal" data-delay="0"><span class="card-emoji">🫧</span><p>kamu nggak perlu sempurna, kamu udah cukup</p></div>
+      <div class="msg-card reveal" data-delay="100"><span class="card-emoji">🩷</span><p>terima kasih selalu jadi alasan aku tersenyum</p></div>
+      <div class="msg-card reveal" data-delay="200"><span class="card-emoji">🌿</span><p>semoga tahun ini penuh cerita indah buat kamu</p></div>
+      <div class="msg-card reveal" data-delay="300"><span class="card-emoji">🫶</span><p>aku selalu di sini, apapun yang terjadi</p></div>
+      <div class="msg-card reveal special-card" data-delay="400"><span class="card-emoji">💌</span><p>dan semoga… aku masih jadi bagian cerita kamu</p></div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section id="closing-section">
+    <div class="closing-content reveal">
+      <p class="closing-script">with all my love,</p>
+      <h2 class="closing-name">untuk Melati 🌷</h2>
+      <p class="closing-date">— di hari yang paling istimewa ini —</p>
+    </div>
+    <div class="petal-rain" id="petalRain"></div>
+  </section>
+
+  <audio id="bg-music" src="assets/music/music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
